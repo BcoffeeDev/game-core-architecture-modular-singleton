@@ -1,0 +1,16 @@
+{
+    "name": "bcoffee-dev.architecture.modular.singleton.tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:545f8531d6fc84033919bf07467bd250"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

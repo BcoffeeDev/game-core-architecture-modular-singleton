@@ -1,0 +1,21 @@
+{
+  "name": "com.bcoffee-dev.architecture.modular.singleton",
+  "version": "1.0.0",
+  "displayName": "ModularSingleton",
+  "description": "This package provides a centralized ModuleContainer system that manages the lifecycle of self-contained BaseModule components. It supports type-safe module access, optional singleton persistence across scenes, and a unified initialization callback system\u2014ideal for organizing logic in small to mid-sized Unity projects.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "architecture",
+    "modular",
+    "singleton"
+  ],
+  "author": {
+    "name": "BcoffeeDev",
+    "email": "bcoffee.work@gmail.com",
+    "url": ""
+  }
+}
