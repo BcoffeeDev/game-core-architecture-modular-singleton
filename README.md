@@ -11,6 +11,27 @@ This package provides a centralized `ModuleContainer` system that manages the li
 - 🌐 **Cross-Scene Support** – Optional `DontDestroyOnLoad` singleton pattern.
 - 🔍 **Type-Safe Access** – Generic module resolution without casting.
 
+## 📦 Installation
+
+To install this package in your Unity project using the Unity Package Manager:
+
+1. Open your Unity project.
+2. Go to `Window > Package Manager`.
+3. Click the `+` button in the top-left corner and select `Add package from Git URL...`
+4. Paste the following URL and click `Add`:
+
+```
+https://github.com/BcoffeeDev/game-core-architecture-modular-singleton.git
+```
+
+Alternatively, you can add it directly to your `manifest.json`:
+
+```json
+"dependencies": {
+  "com.bcoffee-dev.architecture.modular.singleton": "https://github.com/BcoffeeDev/game-core-architecture-modular-singleton.git"
+}
+```
+
 ## 🚀 Getting Started
 
 1. Add the `ModuleContainer` to your scene.
