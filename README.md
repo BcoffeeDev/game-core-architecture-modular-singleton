@@ -1,12 +1,12 @@
 # 🧱 Modular Singleton Architecture for Unity
 
 A lightweight and extensible modular architecture framework for Unity projects.  
-This package provides a centralized `ModuleContainer` system that manages the lifecycle of self-contained modules derived from `BaseModule`.
+This package provides a centralized `BaseContainer<T>` system that manages the lifecycle of self-contained modules derived from `BaseModule`.
 
 ## ✨ Features
 
 - 🧩 **Modular Design** – Create independent components by inheriting from `BaseModule`.
-- 📦 **Centralized Access** – Retrieve modules via `ModuleContainer.GetModule<T>()`.
+- 📦 **Centralized Access** – Retrieve modules via `BaseContainer<T>.Instance.GetModule<M>()`.
 - 🔁 **Lifecycle Control** – Built-in initialization flow with callback registration.
 - 🌐 **Cross-Scene Support** – Optional `DontDestroyOnLoad` singleton pattern.
 - 🔍 **Type-Safe Access** – Generic module resolution without casting.
@@ -34,16 +34,19 @@ Alternatively, you can add it directly to your `manifest.json`:
 
 ## 🚀 Getting Started
 
-1. Add the `ModuleContainer` to your scene.
-2. Implement your own modules by inheriting from `BaseModule`, and add them to the `modules` list in `ModuleContainer` (either via the Inspector).
+1. Create a container by inheriting from `BaseContainer<T>`, and add it to your scene:
+```csharp
+public class MyGameContainer : BaseContainer<MyGameContainer> { }
+```
+2. Implement your own modules by inheriting from `BaseModule`, and add them to the `modules` list in your container (either via the Inspector).
 3. Access modules in code:
 ```csharp
-var myModule = ModuleContainer.Instance.GetModule<MyCustomModule>();
+var myModule = MyGameContainer.Instance.GetModule<MyCustomModule>();
 myModule.DoSomething();
 ```
 4. Optionally, register a callback to wait for module initialization:
 ```csharp
-ModuleContainer.RegisterInitializeCallback(() => {
+MyGameContainer.RegisterInitializeCallback(() => {
     Debug.Log("All modules initialized!");
 });
 ```
