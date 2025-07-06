@@ -1,4 +1,4 @@
-namespace BCF.MSA.Samples
+namespace BCF.Core.ModularSingleton.Samples
 {
     public class DemoContainer : BaseContainer<DemoContainer>
     {

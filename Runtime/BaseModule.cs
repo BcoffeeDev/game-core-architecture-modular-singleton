@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BCF.MSA
+namespace BCF.Core.ModularSingleton
 {
     public class BaseModule : MonoBehaviour
     {

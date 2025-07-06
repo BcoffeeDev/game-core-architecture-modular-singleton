@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BCF.MSA.Samples
+namespace BCF.Core.ModularSingleton.Samples
 {
     public class DisplayModule : BaseModule
     {

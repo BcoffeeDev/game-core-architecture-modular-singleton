@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BCF.MSA
+namespace BCF.Core.ModularSingleton
 {
     public class BaseContainer<T> : MonoBehaviour where T : MonoBehaviour
     {

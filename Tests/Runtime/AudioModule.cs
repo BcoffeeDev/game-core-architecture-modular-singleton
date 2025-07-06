@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BCF.MSA.Samples
+namespace BCF.Core.ModularSingleton.Samples
 {
     public class AudioModule : BaseModule
     {
